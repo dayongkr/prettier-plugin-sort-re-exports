@@ -24,6 +24,7 @@ export type ReExport = (ExportNamedDeclaration | ExportAllDeclaration) & {
 export function preprocessor<T>(code: string): string {
   const ast = parse(code, {
     sourceType: "module",
+    plugins: ["typescript"],
   });
 
   const reExportNodes = ast.program.body.filter(

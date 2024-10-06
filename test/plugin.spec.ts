@@ -64,4 +64,18 @@ export * from "./foo.ts";
     });
     expect(prettiered).toBe(expected);
   });
+
+  it("should parse typescript code", async () => {
+    const code = `export { memoize, type MemoizeCache } from './memoize.ts';`;
+
+    const expected = `export { memoize, type MemoizeCache } from "./memoize.ts";
+`;
+
+    const prettiered = await prettier.format(code, {
+      parser: "typescript",
+      plugins: ["./dist/index.js"],
+    });
+
+    expect(prettiered).toBe(expected);
+  });
 });

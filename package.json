@@ -1,0 +1,37 @@
+{
+  "name": "prettier-plugin-sort-re-exports",
+  "version": "0.0.0",
+  "description": "A prettier plugin that sorts the re-exports statements.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "prettier",
+    "plugin",
+    "sort",
+    "re-exports"
+  ],
+  "author": "dayongkr",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "packageManager": "pnpm@9.12.0",
+  "dependencies": {
+    "@babel/generator": "^7.25.7",
+    "@babel/parser": "^7.25.7",
+    "@babel/traverse": "^7.25.7",
+    "@babel/types": "^7.25.7"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.2"
+  },
+  "peerDependencies": {
+    "prettier": "^3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "prettier-plugin-sort-re-exports",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A prettier plugin that sorts the re-exports statements.",
   "main": "dist/index.js",
   "scripts": {
